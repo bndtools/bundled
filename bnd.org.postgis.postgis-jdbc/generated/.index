@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<repository increment='1353403701274' name='bnd.org.postgis.postgis-jdbc' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='bnd.org.postgis.postgis-jdbc'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.3.3'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='5b04901ebbf8ebdebcd31beef79b1c85f884f43c8a657409b8f3b8688e0e02ec'/>
+      <attribute name='url' value='generated/bnd.org.postgis.postgis-jdbc.jar'/>
+      <attribute name='size' type='Long' value='77713'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='bnd.org.postgis.postgis-jdbc'/>
+      <attribute name='bundle-version' type='Version' value='1.3.3'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='bnd.org.postgis.postgis-jdbc'/>
+      <attribute name='bundle-version' type='Version' value='1.3.3'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='examples'/>
+      <attribute name='version' type='Version' value='100.0.0'/>
+      <attribute name='bundle-symbolic-name' value='bnd.org.postgis.postgis-jdbc'/>
+      <attribute name='bundle-version' type='Version' value='1.3.3'/>
+      <directive name='uses' value='org.postgresql.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.postgis'/>
+      <attribute name='version' type='Version' value='100.0.0'/>
+      <attribute name='bundle-symbolic-name' value='bnd.org.postgis.postgis-jdbc'/>
+      <attribute name='bundle-version' type='Version' value='1.3.3'/>
+      <directive name='uses' value='org.postgresql.util,org.postgresql,org.postgis.binary'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.postgis.binary'/>
+      <attribute name='version' type='Version' value='100.0.0'/>
+      <attribute name='bundle-symbolic-name' value='bnd.org.postgis.postgis-jdbc'/>
+      <attribute name='bundle-version' type='Version' value='1.3.3'/>
+      <directive name='uses' value='org.postgis'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.postgis.java2d'/>
+      <attribute name='version' type='Version' value='100.0.0'/>
+      <attribute name='bundle-symbolic-name' value='bnd.org.postgis.postgis-jdbc'/>
+      <attribute name='bundle-version' type='Version' value='1.3.3'/>
+      <directive name='uses' value='org.postgresql.util,org.postgresql,org.postgis.binary'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.postgresql'/>
+      <attribute name='version' type='Version' value='100.0.0'/>
+      <attribute name='bundle-symbolic-name' value='bnd.org.postgis.postgis-jdbc'/>
+      <attribute name='bundle-version' type='Version' value='1.3.3'/>
+    </capability>
+    <capability namespace='bndtools.workspace'>
+      <attribute name='bndtools.workspace' value='file:/Ws/metadata/bundled'/>
+      <attribute name='project.path' value='/bnd.org.postgis.postgis-jdbc'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.postgresql.util)'/>
+    </requirement>
+  </resource>
+</repository>

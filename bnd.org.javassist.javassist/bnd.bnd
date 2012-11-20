@@ -1,0 +1,54 @@
+# Generated bnd wrapper for           javassist:javassist@3.12.1.GA
+# Recipe by                           ${global;name}
+
+# From original manifest
+Specification-Vendor                    : Shigeru Chiba, Tokyo Institute of Technology
+Specification-Title                     : Javassist
+Specification-Version                   : 3.12.0.GA
+Main-Class                              : javassist.CtClass
+# End of original manifest
+
+Bundle-Description:                    Javassist (JAVA programming ASSISTant) makes Java bytecode manipulation
+     simple.  It is a class library for editing bytecodes in Java.\
+ ${disclaimer}
+Bundle-Version:                       3.12.1.GA
+
+#
+# Coordinates
+#
+JPM-From:                          sha:526633327FAA61AEE448A519E8A4D53EC3057885@0.0.0;coordinates=javassist:javassist@3.12.1.GA;bsn=javassist__javassist
+JPM-URL:                           https://jpm4j.org/#/p/javassist:javassist@3.12.1.GA
+Include-Resource:                  @${repo;526633327FAA61AEE448A519E8A4D53EC3057885;0.0.0}
+Bundle-License:                    ${mpl1.1}, ${lgpl2.1}
+
+Bundle-Developers: \
+    'Shigeru Chiba';email='chiba@acm.org';roles='project lead', \
+    'Andrew Dinn';email='adinn@redhat.com';roles='contributing developer'
+
+
+
+Export-Package: javassist;version=100.0.0;provide:=true,\
+	javassist.bytecode;version=100.0.0;provide:=true,\
+	javassist.bytecode.analysis;version=100.0.0;provide:=true,\
+	javassist.bytecode.annotation;version=100.0.0;provide:=true,\
+	javassist.bytecode.stackmap;version=100.0.0;provide:=true,\
+	javassist.compiler;version=100.0.0;provide:=true,\
+	javassist.compiler.ast;version=100.0.0;provide:=true,\
+	javassist.convert;version=100.0.0;provide:=true,\
+	javassist.expr;version=100.0.0;provide:=true,\
+	javassist.runtime;version=100.0.0;provide:=true,\
+	javassist.scopedpool;version=100.0.0;provide:=true,\
+	javassist.tools;version=100.0.0;provide:=true,\
+	javassist.tools.reflect;version=100.0.0;provide:=true,\
+	javassist.tools.rmi;version=100.0.0;provide:=true,\
+	javassist.tools.web;version=100.0.0;provide:=true,\
+	javassist.util;version=100.0.0;provide:=true,\
+	javassist.util.proxy;version=100.0.0;provide:=true
+
+#
+# Remove after inspection:
+
+Import-Package: com.sun.jdi.event;resolution:=optional,\
+	com.sun.jdi.request;resolution:=optional,\
+	com.sun.jdi;resolution:=optional,\
+	com.sun.jdi.connect;resolution:=optional

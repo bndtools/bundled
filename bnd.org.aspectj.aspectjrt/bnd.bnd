@@ -1,0 +1,38 @@
+# Generated bnd wrapper for           org.aspectj:aspectjrt@1.7.1
+# Recipe by                           ${global;name}
+
+
+
+# End of original manifest
+
+Bundle-Description:                    The runtime needed to execute a program using AspectJ\
+ ${disclaimer}
+Bundle-Version:                       1.7.1
+#
+# Coordinates
+#
+JPM-From:                             sha:E9ED47B6E3326C4A6666027978315028275BA8AA@0.0.0;coordinates=org.aspectj:aspectjrt@1.7.1;bsn=org.aspectj__aspectjrt
+JPM-URL:                              https://jpm4j.org/#/p/org.aspectj:aspectjrt@1.7.1
+Include-Resource:                     @${repo;E9ED47B6E3326C4A6666027978315028275BA8AA;0.0.0}
+Bundle-License:                       ${epl1.0}
+
+Bundle-Developers: \
+    Andy Clement;email='aclement@vmware.com'
+
+
+
+Export-Package: \
+	org.aspectj.lang;version=100.0.0;provide:=true,\
+	org.aspectj.lang.annotation;version=100.0.0;provide:=true,\
+	org.aspectj.lang.reflect;version=100.0.0;provide:=true,\
+	org.aspectj.runtime;version=100.0.0;provide:=true,\
+	org.aspectj.runtime.reflect;version=100.0.0;provide:=true
+  
+Not-Exported: \
+  org.aspectj.internal.lang.annotation,\
+  org.aspectj.internal.lang.reflect,\
+  org.aspectj.lang.internal.lang,\
+  org.aspectj.runtime.internal,\
+  org.aspectj.runtime.internal.cflowstack
+
+  

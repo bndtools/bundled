@@ -1,0 +1,34 @@
+# Generated bnd wrapper for           org.postgis:postgis-stubs@1.3.3
+# Recipe by                           ${global;name}
+
+#
+# This bundle extends a package in the postgres bundle so tried to make
+# it a fragment. Not sure if this works
+#
+warning: ${warning;Fragment attempt!}
+
+Fragment-Host:						  bnd.postgresql.postgresql.jdbc3;version='[9.1.0,10)'
+Bundle-Description:                   PostGIS adds support for geographic objects to the PostgreSQL object-relational database.\
+ ${disclaimer}
+Bundle-Version:                       1.3.3
+Bundle-Icon:                          http://www.postgis.org/documentation/manual-svn/images/PostGIS_logo.png
+
+#
+# Coordinates
+#
+JPM-From:                             sha:71BC58069260F86338A00E6897DE082759AE6A67@0.0.0;coordinates=org.postgis:postgis-stubs@1.3.3;bsn=org.postgis__postgis-stubs
+JPM-URL:                              https://jpm4j.org/#/p/org.postgis/postgis-stubs//1.3.3
+Include-Resource:                     @${repo;71BC58069260F86338A00E6897DE082759AE6A67;0.0.0}
+Bundle-License:                    GNU Lesser General Public License;url='http://www.gnu.org/licenses/lgpl-2.1.txt'
+
+Bundle-Developers: \
+    'Postgis Development Team'
+
+Bundle-Contributors: \
+    Hakan Tandogan;email='hakan@gurkensalat.com';roles='Maven Packager'
+
+
+#
+# Remove after inspection:
+
+-buildpath: bnd.postgresql.postgresql.jdbc3;version=latest

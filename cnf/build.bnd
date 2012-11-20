@@ -1,0 +1,57 @@
+## Place your specific settings here.
+
+
+## Default settings are in ext/*.bnd and they will be overridden by anything
+## you specify in this file.
+
+
+## Properties from ext/*.bnd can be referenced in order to extend them.
+## For example, to add one addtional plugin to the list defined in ext/repositories.bnd:
+# -plugin: ${ext.repositories.-plugin}, org.example.MyPlugin
+
+-plugin: \
+		aQute.lib.deployer.FileRepo; \
+			name=Release; \
+			location=${workspace}/release, \
+        aQute.library.bnd2.Repository;\
+                url='http://jpm4j.org/rest/';\
+                includeStaged=true;name=JPM;\
+                location=cache; \
+                path:=${workspace}/cnf/plugins/aQute.library.bndrepo/aQute.library.bndrepo-1.0.1.jar, \
+
+
+## If you use git, you might want to uncomment the following lines:
+Git-Descriptor: ${system-allow-fail;git describe --dirty --always}
+Git-SHA: ${system-allow-fail;git rev-list -1 HEAD}
+
+#
+# Bundled macros
+#
+
+ASL2.0	:			
+UNKNOWN_LICENSE
+
+disclaimer:		\nThis bundle was created from an external artifact and has not been verified in any way. Using this \
+ bundle is at your own risk.
+
+Bundle-Vendor: 		:	aQute SARL http://www.aQute.biz
+asl2.0				:   http://www.opensource.org/licenses/apache2.0.php; \
+							link=http://www.apache.org/licenses/LICENSE-2.0.html; \
+							description='Apache License, Version 2.0'
+bsd2				:	http://opensource.org/licenses/BSD-2-Clause; \
+							link='http://en.wikipedia.org/wiki/BSD_licenses'; \
+							description='BSD licenses are a family of permissive free software licenses. The original license was used for the Berkeley Software Distribution (BSD)'
+
+mpl1.1           	:   http://opensource.org/licenses/MPL-1.1; \
+							link=http://www.mozilla.org/MPL/MPL-1.1.html; \
+							description'Open Source Initiative OSI - Mozilla Public License 1.1 (MPL-1.1)'
+
+lgpl2.1				:	http://opensource.org/licenses/lgpl-2.1.php; \
+							url='http://www.gnu.org/licenses/lgpl-2.1.html'; \
+							description='The GNU Lesser General Public License, version 2.1 (LGPL-2.1)'
+
+epl1.0				:   http://opensource.org/licenses/EPL-1.0; \
+							url='http://www.eclipse.org/legal/epl-v10.html';
+							description='Eclipse Public License'							
+
+Bundle-Wrapper		:	${global;name} ${global;email} 

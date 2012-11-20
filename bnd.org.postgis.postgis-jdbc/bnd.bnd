@@ -1,0 +1,35 @@
+# Generated bnd wrapper for           org.postgis:postgis-jdbc@1.3.3
+# Recipe by                           ${global;name}
+
+Bundle-Description:                    PostGIS adds support for geographic objects to the PostgreSQL object-relational database.\
+ ${disclaimer}
+Bundle-Version:                       1.3.3
+Bundle-Icon:                          http://www.postgis.org/documentation/manual-svn/images/PostGIS_logo.png
+
+#
+# Coordinates
+#
+JPM-From:                             sha:350A8F88EF5077D33B2166D08ED3CA9897C020B9@0.0.0;coordinates=org.postgis:postgis-jdbc@1.3.3;bsn=org.postgis__postgis-jdbc
+JPM-URL:                              https://jpm4j.org/#/p/org.postgis/postgis-jdbc//1.3.3
+Include-Resource:                     @${repo;350A8F88EF5077D33B2166D08ED3CA9897C020B9;0.0.0}
+Bundle-License:                       ${lgpl2.1}
+
+Bundle-Developers: \
+    'Postgis Development Team'
+
+Bundle-Contributors: \
+    'Hakan Tandogan';email='hakan@gurkensalat.com';roles='Maven Packager'
+
+Export-Package: examples;version=100.0.0;provide:=true,\
+	org.postgis;version=100.0.0;provide:=true,\
+	org.postgis.binary;version=100.0.0;provide:=true,\
+	org.postgis.java2d;version=100.0.0;provide:=true,\
+	org.postgresql;version=100.0.0;provide:=true
+
+#
+# Remove after inspection:
+
+Import-Package: \
+  org.postgresql.util, *
+
+-buildpath: bnd.postgresql.postgresql.jdbc3;version=latest

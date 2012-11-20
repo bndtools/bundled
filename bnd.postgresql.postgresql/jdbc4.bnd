@@ -1,0 +1,43 @@
+# Generated bnd wrapper for           postgresql:postgresql@9.1-901.jdbc4
+# Recipe by                           ${global;name}
+
+Bundle-Description:                    The PostgreSQL Driver JDBC4\
+ ${disclaimer}
+Bundle-Version:                       9.1.0
+Bundle-Icon:                          http://www.evidentsoftware.com/software/wp-content/uploads/2011/03/logo-postgresql-pg.gif
+#
+# Coordinates
+#
+JPM-From:                             sha:153F2F92A786F12FC111D0111F709012DF87C808@0.0.0;coordinates=postgresql:postgresql@9.1-901.jdbc4;bsn=postgresql__postgresql
+JPM-URL:                              https://jpm4j.org/#/p/postgresql:postgresql@9.1-901.jdbc4
+Include-Resource:                     @${repo;153F2F92A786F12FC111D0111F709012DF87C808;0.0.0}
+Bundle-License:                       ${bsd2}
+
+Bundle-Developers: \
+    'Dave Cramer'
+
+
+
+Export-Package: org.postgresql;version=100.0.0;provide:=true,\
+	org.postgresql.copy;version=100.0.0;provide:=true,\
+	org.postgresql.core;version=100.0.0;provide:=true,\
+	org.postgresql.core.types;version=100.0.0;provide:=true,\
+	org.postgresql.core.v2;version=100.0.0;provide:=true,\
+	org.postgresql.core.v3;version=100.0.0;provide:=true,\
+	org.postgresql.ds;version=100.0.0;provide:=true,\
+	org.postgresql.ds.common;version=100.0.0;provide:=true,\
+	org.postgresql.ds.jdbc23;version=100.0.0;provide:=true,\
+	org.postgresql.ds.jdbc4;version=100.0.0;provide:=true,\
+	org.postgresql.fastpath;version=100.0.0;provide:=true,\
+	org.postgresql.geometric;version=100.0.0;provide:=true,\
+	org.postgresql.gss;version=100.0.0;provide:=true,\
+	org.postgresql.jdbc2;version=100.0.0;provide:=true,\
+	org.postgresql.jdbc2.optional;version=100.0.0;provide:=true,\
+	org.postgresql.jdbc3;version=100.0.0;provide:=true,\
+	org.postgresql.jdbc3g;version=100.0.0;provide:=true,\
+	org.postgresql.jdbc4;version=100.0.0;provide:=true,\
+	org.postgresql.largeobject;version=100.0.0;provide:=true,\
+	org.postgresql.ssl;version=100.0.0;provide:=true,\
+	org.postgresql.translation;version=100.0.0;provide:=true,\
+	org.postgresql.util;version=100.0.0;provide:=true,\
+	org.postgresql.xa;version=100.0.0;provide:=true
