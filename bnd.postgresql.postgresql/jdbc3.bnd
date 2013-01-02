@@ -3,7 +3,7 @@
 
 Bundle-Description:                    The PostgreSQL Driver JDBC4 (pkr: this is likely intended to be JDBC3)\
  ${disclaimer}
-Bundle-Version:                       9.1.0
+Bundle-Version: 9.1.0
 Bundle-Icon:                          http://www.evidentsoftware.com/software/wp-content/uploads/2011/03/logo-postgresql-pg.gif
 #
 # Coordinates

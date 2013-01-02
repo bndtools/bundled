@@ -3,7 +3,7 @@
 
 Bundle-Description:                    PostGIS adds support for geographic objects to the PostgreSQL object-relational database.\
  ${disclaimer}
-Bundle-Version:                       1.3.3
+Bundle-Version: 1.3.3
 Bundle-Icon:                          http://www.postgis.org/documentation/manual-svn/images/PostGIS_logo.png
 
 #
