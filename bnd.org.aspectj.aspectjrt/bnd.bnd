@@ -17,7 +17,7 @@ Include-Resource:                     @${repo;E9ED47B6E3326C4A666602797831502827
 Bundle-License:                       ${epl1.0}
 
 Bundle-Developers: \
-    Andy Clement;email='aclement@vmware.com'
+    'Andy Clement';email='aclement@vmware.com'
 
 
 

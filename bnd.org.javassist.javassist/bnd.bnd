@@ -11,7 +11,7 @@ Main-Class                              : javassist.CtClass
 Bundle-Description:                    Javassist (JAVA programming ASSISTant) makes Java bytecode manipulation
      simple.  It is a class library for editing bytecodes in Java.\
  ${disclaimer}
-Bundle-Version:                       3.12.1.GA
+Bundle-Version: 3.12.1.GA
 
 #
 # Coordinates
