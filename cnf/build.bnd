@@ -17,7 +17,7 @@
                 url='http://jpm4j.org/rest/';\
                 includeStaged=true;name=JPM;\
                 location=cache; \
-                path:=${workspace}/cnf/localrepo/aQute.library.bndrepo/aQute.library.bndrepo-1.0.1.jar, \
+                path:=${workspace}/cnf/localrepo/aQute.library.bndrepo/aQute.library.bndrepo-1.0.2.jar, \
 
 
 ## If you use git, you might want to uncomment the following lines:
