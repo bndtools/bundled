@@ -1,0 +1,36 @@
+# Generated bnd wrapper for           javax.activation:activation@1.1.1
+# Recipe by                           ${global;name}
+
+# From original manifest
+Implementation-Vendor                   : Sun Microsystems, Inc.
+Implementation-Title                    : Sun Java System Application Server
+Implementation-Version                  : 1.1.1
+Implementation-Vendor-Id                : com.sun
+Specification-Vendor                    : Sun Microsystems, Inc.
+Specification-Title                     : JavaBeans(TM) Activation Framework Specification
+Specification-Version                   : 1.1
+Extension-Name                          : javax.activation
+
+# End of original manifest
+
+Bundle-Description:                    The JavaBeans(TM) Activation Framework is used by the JavaMail(TM) API to manage MIME data\
+ ${disclaimer}
+Bundle-Version: 1.1.1
+
+#
+# Coordinates
+#
+JPM-From:                             sha:485DE3A253E23F645037828C07F1D7F1AF40763A@0.0.0;coordinates=javax.activation:activation@1.1.1;bsn=javax.activation__activation
+JPM-URL:                              https://jpm4j.org/#/p/javax.activation/activation//1.1.1
+Include-Resource:                     @${repo;485DE3A253E23F645037828C07F1D7F1AF40763A;0.0.0}
+Bundle-Vendor:                        Sun Microsystems, Inc.
+Bundle-License:                    COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0;url='https://glassfish.dev.java.net/public/CDDLv1.0.html'
+
+
+
+
+
+Export-Package: \
+  com.sun.activation.registries;version=100.0.0;provide:=true,\
+  com.sun.activation.viewers;version=100.0.0;provide:=true,\
+  javax.activation;version=100.0.0;provide:=true

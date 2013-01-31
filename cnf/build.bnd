@@ -17,7 +17,7 @@
                 url='http://jpm4j.org/rest/';\
                 includeStaged=true;name=JPM;\
                 location=cache; \
-                path:=${workspace}/cnf/localrepo/aQute.library.bndrepo/aQute.library.bndrepo-1.0.2.jar, \
+                path:=${workspace}/cnf/localrepo/aQute.library.bndrepo/aQute.library.bndrepo-1.1.1.jar, \
 
 
 ## If you use git, you might want to uncomment the following lines:
@@ -35,6 +35,9 @@ disclaimer:		\nThis bundle was created from an external artifact and has not bee
  bundle is at your own risk.
 
 Bundle-Vendor: 		:	aQute SARL http://www.aQute.biz
+Bundle-SCM			:	https://github.com/bndtools/bundled
+
+
 asl2.0				:   http://www.opensource.org/licenses/apache2.0.php; \
 							link=http://www.apache.org/licenses/LICENSE-2.0.html; \
 							description='Apache License, Version 2.0'
