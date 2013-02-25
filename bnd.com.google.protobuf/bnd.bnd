@@ -1,0 +1,31 @@
+# Generated bnd wrapper for           com.google.protobuf:protobuf-java@2.4.1
+# Recipe by                           ${global;name}
+
+# From original manifest
+Build-Jdk                               : 1.6.0_24
+Built-By                                : gak
+Archiver-Version                        : Plexus Archiver
+
+# End of original manifest
+
+Bundle-Description:                    Protocol Buffers are a way of encoding structured data in an efficient yet
+    extensible format.\
+ ${disclaimer}
+Bundle-Version:                       2.4.1
+
+#
+# Coordinates
+#
+JPM-From:                             sha:0C589509EC6FD86D5D2FDA37E07C08538235D3B9@0.0.0;coordinates=com.google.protobuf:protobuf-java@2.4.1;bsn=com.google.protobuf__protobuf-java
+JPM-URL:                              https://jpm4j.org/#/p/com.google.protobuf/protobuf-java//2.4.1
+Include-Resource:                     @${repo;0C589509EC6FD86D5D2FDA37E07C08538235D3B9;0.0.0}
+Bundle-Vendor:                        Google
+Bundle-ContactAddress:                        http://www.google.com/
+Bundle-License:                    The Apache Software License, Version 2.0;url='http://www.apache.org/licenses/LICENSE-2.0.txt', \
+    New BSD license;url='http://www.opensource.org/licenses/bsd-license.php'
+
+Export-Package: com.google.protobuf;version=100.0.0;provide:=true
+
+-buildpath: \
+	com.google.protobuf__protobuf-java;version=2.4.1
+
